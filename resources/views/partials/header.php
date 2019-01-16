@@ -9,54 +9,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
 		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../produtos/calendar/img/favicon.ico">
     <!-- Google Fonts
 		============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
     <!-- Bootstrap CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../produtos/calendar/css/bootstrap.min.css">
     <!-- font awesome CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="../produtos/calendar/css/font-awesome.min.css">
     <!-- owl.carousel CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="../produtos/calendar/css/owl.carousel.css">
+    <link rel="stylesheet" href="../produtos/calendar/css/owl.theme.css">
+    <link rel="stylesheet" href="../produtos/calendar/css/owl.transitions.css">
     <!-- meanmenu CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/meanmenu/meanmenu.min.css">
+    <link rel="stylesheet" href="../produtos/calendar/css/meanmenu/meanmenu.min.css">
     <!-- animate CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="../produtos/calendar/css/animate.css">
     <!-- normalize CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../produtos/calendar/css/normalize.css">
     <!-- mCustomScrollbar CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../produtos/calendar/css/scrollbar/jquery.mCustomScrollbar.min.css">
     <!-- jvectormap CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/jvectormap/jquery-jvectormap-2.0.3.css">
+    <link rel="stylesheet" href="../produtos/calendar/css/jvectormap/jquery-jvectormap-2.0.3.css">
     <!-- Notika icon CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/notika-custom-icon.css">
+    <link rel="stylesheet" href="../produtos/calendar/css/notika-custom-icon.css">
     <!-- wave CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/wave/waves.min.css">
+    <link rel="stylesheet" href="../produtos/calendar/css/wave/waves.min.css">
     <!-- main CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../produtos/calendar/css/main.css">
     <!-- style CSS
 		============================================ -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../produtos/calendar/style.css">
     <!-- responsive CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="../produtos/calendar/css/responsive.css">
     <!-- modernizr JS
 		============================================ -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="../produtos/calendar/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
@@ -69,7 +69,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="logo-area">
-                    <a href="#"><img src="img/logo/mb.png" alt="" /></a>
+                    <a href="#"><img src="../produtos/calendar/img/logo/mb.png" alt="" /></a>
                 </div>
             </div>
         </div>
@@ -88,8 +88,8 @@
                             </li>
                             <li><a data-toggle="collapse" data-target="#demoevent" href="#">Produto</a>
                                 <ul id="demoevent" class="collapse dropdown-header-top">
-                                    <li><a href="cadastra-produto.php">Cadastrar Produto</a></li>
-                                    <li><a href="consulta-produto.php">Consultar Produto</a></li>
+                                    <li><a href="../produtos/calendar/cadastra-produto.php">Cadastrar Produto</a></li>
+                                    <li><a href="../produtos/calendar/consulta-produto.php">Consultar Produto</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -106,7 +106,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
-                    <li class="active"><a href="index.php"><i class="notika-icon notika-house"></i> Home</a>
+                    <li class="active"><a href="../home/index.php"><i class="notika-icon notika-house"></i> Home</a>
                     </li>
                     <li><a data-toggle="tab" href="#mailbox"><i class="notika-icon notika-mail"></i> Produtos</a>
                     </li>
@@ -114,9 +114,9 @@
                 <div class="tab-content custom-menu-content">
                     <div id="mailbox" class="tab-pane notika-tab-menu-bg animated flipInX">
                         <ul class="notika-main-menu-dropdown">
-                            <li><a href="cadastra-produto.php">Cadastrar Produto</a>
+                            <li><a href="../produtos/calendar/cadastra-produto.php">Cadastrar Produto</a>
                             </li>
-                            <li><a href="consulta-produto.php">Consultar Produto</a>
+                            <li><a href="../produtos/calendar/consulta-produto.php">Consultar Produto</a>
                             </li>
                         </ul>
                     </div>
