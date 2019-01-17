@@ -1,4 +1,15 @@
-<?php include 'header-produto.php'; ?>
+<?php include 'header-produto.php';
+require_once '../../../../controllers/produtos/ProdutosController.php';
+
+if($_SERVER['REQUEST_METHOD']=='POST'){
+    if(isset($_POST['barras'])&&isset($_POST['nome'])&&isset($_POST['precoCompra'])&&isset($_POST['precoVenda'])){
+        $ctrProduto = new ProdutosController();
+        $res = $ctrProduto->cadastraProduto($_POST['barras'], $_POST['nome'], $_POST['precoCompra'], $_POST['precoVenda']);
+        if($res){
+            //TODO: Exibir modal de confirmação de adição do produto
+        }
+    }
+}?>
     <!-- Form Element area Start-->
     <div class="form-element-area">
         <div class="container">
@@ -11,7 +22,7 @@
                                     <div class="nk-int-mk sl-dp-mn sm-res-mg-t-10">
                                         <h2>Código de Barras</h2>
                                     </div>
-                                    <form name="consulta-produto">
+                                    <form action="" method="post" name="cadastra-produto">
                                         <input type="text" class="form-control" onload="focus()" name="barras" id="barras" placeholder="código de barras">
                                 </div>
                             </div>
@@ -22,7 +33,6 @@
                                 </div>
                                 <div class="bootstrap-select fm-cmp-mg">
                                     <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
-                                    </form>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
@@ -30,8 +40,7 @@
                                     <h2>Preço de Compra</h2>
                                 </div>
                                 <div class="bootstrap-select fm-cmp-mg">
-                                    <input type="text" class="form-control" name="nome" id="nome" placeholder="somente números">
-                                    </form>
+                                    <input type="text" class="form-control" name="precoCompra" id="precoCompra" placeholder="R$">
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
@@ -39,14 +48,15 @@
                                     <h2>Preço de Venda</h2>
                                 </div>
                                 <div class="bootstrap-select fm-cmp-mg">
-                                    <input type="text" class="form-control" name="nome" id="nome" placeholder="somente números">
-                                    </form>
+                                    <input type="text" class="form-control" name="precoVenda" id="precoVenda" placeholder="R$">
+
                                 </div>
                             </div>
                             <br>
                         </div>
                         <br>
-                        <button class="btn btn-default btn-icon-notika"><i class="notika-icon notika-checked"></i> Cadastrar</button>
+                        <button class="btn btn-default btn-icon-notika" type="submit"><i class="notika-icon notika-checked"></i> Cadastrar</button>
+                        </form>
                     </div>
                 </div>
             </div>
